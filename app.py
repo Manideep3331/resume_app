@@ -1,5 +1,9 @@
 import streamlit as st
 import pandas as pd
+import sklearn
+from sklearn.linear_model import LinearRegression  # Example
+
+model = sklearn.linear_model.LinearRegression() # Accessing using sklearn. prefix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import PyPDF2  # For PDF parsing
